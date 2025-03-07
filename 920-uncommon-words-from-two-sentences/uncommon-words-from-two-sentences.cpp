@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<string> uncommonFromSentences(string s1, string s2) {
-        string f = s1 + " " + s2;
+        string fin = s1 + " " + s2;
         vector<string> ans;
-        stringstream ss(f);
+        stringstream s(fin);
         string word;
         unordered_map<string, int> mp;
-        while (ss >> word) {
+        while (s >> word) {
             mp[word]++;
         }
         for (auto it : mp) {
