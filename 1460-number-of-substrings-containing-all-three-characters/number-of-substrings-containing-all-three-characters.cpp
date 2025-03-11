@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numberOfSubstrings(string s) {
-       vector<int> count(3,0);
+       std::vector<int> count(3,0);
         int left =0;
         int result =0;
         for (int i =0; i< s.length(); i++)
