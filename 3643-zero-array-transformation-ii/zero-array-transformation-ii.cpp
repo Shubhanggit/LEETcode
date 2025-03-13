@@ -34,7 +34,7 @@ public:
                 cout << "-->1 \n";
             } else {
                 l = mid+1;
-                cout << "-->2 \n";
+                cout << "-->2 ";
             }
         }
         return res;
