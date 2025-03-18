@@ -1,9 +1,12 @@
 class Solution {
 public:
     uint32_t reverseBits(uint32_t n) {
-        string str = bitset<32>(n).to_string();
-        reverse(str.begin(),str.end());
-        uint32_t num = bitset<32>(str).to_ulong();
-        return num;
+        uint32_t ans = 0;
+        for (int i = 0; i < 32; i++) {
+            ans <<= 1;
+            ans |= (n & 1);
+            n >>= 1;
+        }
+        return ans;
     }
 };
