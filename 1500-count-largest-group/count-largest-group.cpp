@@ -19,6 +19,6 @@ public:
             if (v[i] == ans) count++;
             else break;
         }
-        return count++;
+        return count;
     }
 };
