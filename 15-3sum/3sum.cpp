@@ -14,15 +14,15 @@ public:
                     s.insert({nums[i], nums[j], nums[k]});
                     j++;
                     k--;
-                } else if (sum < target) {
+                }else if (sum<target){
                     j++;
-                } else {
+                }
+                else{
                     k--;
                 }
             }
-        }
-        for(auto triplets : s)
-            output.push_back(triplets);
+        } for (auto triplets :s)
+        output.push_back(triplets);
         return output;
     }
 };
