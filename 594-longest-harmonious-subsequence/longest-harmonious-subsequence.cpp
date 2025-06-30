@@ -6,7 +6,7 @@ public:
 
         for (int i = 0; i < nums.size(); ++i) {
             while (nums[i] - nums[j] > 1) {
-                j++;
+                ++j;
             }
             if (nums[i] - nums[j] == 1) {
                 maxLength = max(maxLength, i - j + 1);
