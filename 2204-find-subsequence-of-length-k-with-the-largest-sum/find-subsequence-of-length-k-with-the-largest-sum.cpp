@@ -11,8 +11,6 @@ public:
 
         // Take top k elements
         vector<pair<int, int>> topK(numIndex.begin(), numIndex.begin() + k);
-
-        // Sort top k by original index to maintain order
         sort(topK.begin(), topK.end(), [](auto &a, auto &b) {
             return a.second < b.second;
         });
