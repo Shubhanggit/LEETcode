@@ -5,7 +5,7 @@ public:
         int maxarea=0;
         for(auto &d: dimensions){
             int l=d[0], w=d[1];
-            long long digsq = (long long)l * l + (long long)w * w;
+            int digsq = l * l + w * w;
             int area = l*w;
             if(digsq> maxdig){
                 maxdig=digsq;
